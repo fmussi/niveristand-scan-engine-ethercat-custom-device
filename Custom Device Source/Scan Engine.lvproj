@@ -72,6 +72,7 @@
 		<Item Name="_test_Manual" Type="Folder">
 			<Item Name="LibTest.lvlib" Type="Library" URL="../Tests/ManualTests/LibTest.lvlib"/>
 			<Item Name="test SGL type.vi" Type="VI" URL="../Tests/ManualTests/test SGL type.vi"/>
+			<Item Name="compare typedefs.vi" Type="VI" URL="../Tests/ManualTests/compare typedefs.vi"/>
 		</Item>
 		<Item Name="Scan Engine Custom Device.lvlib" Type="Library" URL="../Scan Engine Custom Device.lvlib"/>
 		<Item Name="Build VIs.lvlib" Type="Library" URL="../Build VIs/Build VIs.lvlib"/>
@@ -79,17 +80,28 @@
 			<Item Name="RSI Module Template" Type="Folder">
 				<Item Name="Module Template.lvclass" Type="LVClass" URL="../Modules.lvlibp/Module Template/Module Template.lvclass"/>
 			</Item>
+			<Item Name="Specific RemIO Modules" Type="Folder">
+				<Item Name="11100.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11100/11100.lvclass"/>
+				<Item Name="11102.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11102/11102.lvclass"/>
+				<Item Name="11115.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11115/11115.lvclass"/>
+				<Item Name="11120.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11120/11120.lvclass"/>
+				<Item Name="11152.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11152/11152.lvclass"/>
+				<Item Name="11154.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11154/11154.lvclass"/>
+				<Item Name="11175.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11175/11175.lvclass"/>
+				<Item Name="11178.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11178/11178.lvclass"/>
+			</Item>
 			<Item Name="Specific RSI Modules" Type="Folder">
 				<Item Name="Specialty Digital" Type="Folder">
-					<Item Name="SD Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/SD Module/SD Module.lvclass"/>
 					<Item Name="9401.lvclass" Type="LVClass" URL="../Modules.lvlibp/9401/9401.lvclass"/>
 					<Item Name="9402.lvclass" Type="LVClass" URL="../Modules.lvlibp/9402/9402.lvclass"/>
+					<Item Name="SD Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/SD Module/SD Module.lvclass"/>
 				</Item>
 				<Item Name="9203.lvclass" Type="LVClass" URL="../Modules.lvlibp/9203/9203.lvclass"/>
 				<Item Name="9205.lvclass" Type="LVClass" URL="../Modules.lvlibp/9205/9205.lvclass"/>
 				<Item Name="9207.lvclass" Type="LVClass" URL="../Modules.lvlibp/9207/9207.lvclass"/>
 				<Item Name="9209.lvclass" Type="LVClass" URL="../Modules.lvlibp/9209/9209.lvclass"/>
 				<Item Name="9211.lvclass" Type="LVClass" URL="../Modules.lvlibp/9211/9211.lvclass"/>
+				<Item Name="9212.lvclass" Type="LVClass" URL="../Modules.lvlibp/9212/9212.lvclass"/>
 				<Item Name="9213.lvclass" Type="LVClass" URL="../Modules.lvlibp/9213/9213.lvclass"/>
 				<Item Name="9214.lvclass" Type="LVClass" URL="../Modules.lvlibp/9214/9214.lvclass"/>
 				<Item Name="9217.lvclass" Type="LVClass" URL="../Modules.lvlibp/9217/9217.lvclass"/>
@@ -101,62 +113,51 @@
 				<Item Name="9235.lvclass" Type="LVClass" URL="../Modules.lvlibp/9235/9235.lvclass"/>
 				<Item Name="9237.lvclass" Type="LVClass" URL="../Modules.lvlibp/9237/9237.lvclass"/>
 				<Item Name="9239.lvclass" Type="LVClass" URL="../Modules.lvlibp/9239/9239.lvclass"/>
+				<Item Name="9242.lvclass" Type="LVClass" URL="../Modules.lvlibp/9242/9242.lvclass"/>
+				<Item Name="9244.lvclass" Type="LVClass" URL="../Modules.lvlibp/9244/9244.lvclass"/>
 				<Item Name="9350.lvclass" Type="LVClass" URL="../Modules.lvlibp/9350/9350.lvclass"/>
 				<Item Name="9403.lvclass" Type="LVClass" URL="../Modules.lvlibp/9403/9403.lvclass"/>
 				<Item Name="9478.lvclass" Type="LVClass" URL="../Modules.lvlibp/9478/9478.lvclass"/>
-				<Item Name="9244.lvclass" Type="LVClass" URL="../Modules.lvlibp/9244/9244.lvclass"/>
-				<Item Name="9212.lvclass" Type="LVClass" URL="../Modules.lvlibp/9212/9212.lvclass"/>
-				<Item Name="9242.lvclass" Type="LVClass" URL="../Modules.lvlibp/9242/9242.lvclass"/>
 			</Item>
-			<Item Name="Specific RemIO Modules" Type="Folder">
-				<Item Name="11102.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11102/11102.lvclass"/>
-				<Item Name="11115.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11115/11115.lvclass"/>
-				<Item Name="11152.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11152/11152.lvclass"/>
-				<Item Name="11154.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11154/11154.lvclass"/>
-				<Item Name="11175.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11175/11175.lvclass"/>
-				<Item Name="11178.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11178/11178.lvclass"/>
-				<Item Name="11120.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11120/11120.lvclass"/>
-				<Item Name="11100.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11100/11100.lvclass"/>
-			</Item>
-			<Item Name="RSI Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RSI Module/RSI Module.lvclass"/>
-			<Item Name="Init Module.vi" Type="VI" URL="../Modules.lvlibp/Init Module.vi"/>
-			<Item Name="RemIO Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RemIO Module/RemIO Module.lvclass"/>
-			<Item Name="Get RemIO VI Reference.vim" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO VI Reference.vim"/>
-			<Item Name="Get RemIO Library Path.vi" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO Library Path.vi"/>
-			<Item Name="NI ECAT Remote IO.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/NI ECAT Remote IO.lvlib"/>
+			<Item Name="Check Special Tags.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
+			<Item Name="Clear Errors.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
+			<Item Name="Close File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Close File+.vi"/>
+			<Item Name="compatReadText.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/_oldvers/_oldvers.llb/compatReadText.vi"/>
+			<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
+			<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/NI Veristand/Custom Device API/Custom Device API.lvlib"/>
 			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/NI Veristand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
-			<Item Name="Clear Errors.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
-			<Item Name="negative confirmation.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/typedefs/negative confirmation.ctl"/>
-			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-			<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
-			<Item Name="Strip Path - Traditional__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Strip Path - Traditional__ogtk.vi"/>
-			<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
-			<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
-			<Item Name="Open File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Open File+.vi"/>
-			<Item Name="compatReadText.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/_oldvers/_oldvers.llb/compatReadText.vi"/>
-			<Item Name="Read File+ (string).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read File+ (string).vi"/>
-			<Item Name="Find First Error.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find First Error.vi"/>
-			<Item Name="Close File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Close File+.vi"/>
 			<Item Name="DialogType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
-			<Item Name="Write Spreadsheet String.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write Spreadsheet String.vi"/>
-			<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
-			<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 			<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
-			<Item Name="TagReturnType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
-			<Item Name="Check Special Tags.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
-			<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			<Item Name="Error Code Database.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
-			<Item Name="whitespace.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
-			<Item Name="Trim Whitespace.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
-			<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
+			<Item Name="Find First Error.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find First Error.vi"/>
 			<Item Name="Find Tag.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
 			<Item Name="Format Message String.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
 			<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
 			<Item Name="General Error Handler.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
-			<Item Name="Simple Error Handler.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
-			<Item Name="Read Lines From File.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read Lines From File.vi"/>
+			<Item Name="Get RemIO Library Path.vi" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO Library Path.vi"/>
+			<Item Name="Get RemIO VI Reference.vim" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO VI Reference.vim"/>
+			<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+			<Item Name="Init Module.vi" Type="VI" URL="../Modules.lvlibp/Init Module.vi"/>
+			<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+			<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
+			<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
+			<Item Name="negative confirmation.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/typedefs/negative confirmation.ctl"/>
+			<Item Name="NI ECAT Remote IO.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/NI ECAT Remote IO.lvlib"/>
+			<Item Name="Open File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Open File+.vi"/>
+			<Item Name="Read File+ (string).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read File+ (string).vi"/>
 			<Item Name="Read From Spreadsheet File (DBL).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read From Spreadsheet File (DBL).vi"/>
+			<Item Name="Read Lines From File.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read Lines From File.vi"/>
+			<Item Name="RemIO Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RemIO Module/RemIO Module.lvclass"/>
+			<Item Name="RSI Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RSI Module/RSI Module.lvclass"/>
+			<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
+			<Item Name="Simple Error Handler.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
+			<Item Name="Strip Path - Traditional__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Strip Path - Traditional__ogtk.vi"/>
+			<Item Name="TagReturnType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
+			<Item Name="Trim Whitespace.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
+			<Item Name="whitespace.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+			<Item Name="Write Spreadsheet String.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write Spreadsheet String.vi"/>
 			<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
 		</Item>
 		<Item Name="NI ECAT Remote IO.llb" Type="Document" URL="../NI ECAT Remote IO.llb"/>
@@ -1038,17 +1039,28 @@
 			<Item Name="RSI Module Template" Type="Folder">
 				<Item Name="Module Template.lvclass" Type="LVClass" URL="../Modules.lvlibp/Module Template/Module Template.lvclass"/>
 			</Item>
+			<Item Name="Specific RemIO Modules" Type="Folder">
+				<Item Name="11100.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11100/11100.lvclass"/>
+				<Item Name="11102.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11102/11102.lvclass"/>
+				<Item Name="11115.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11115/11115.lvclass"/>
+				<Item Name="11120.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11120/11120.lvclass"/>
+				<Item Name="11152.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11152/11152.lvclass"/>
+				<Item Name="11154.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11154/11154.lvclass"/>
+				<Item Name="11175.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11175/11175.lvclass"/>
+				<Item Name="11178.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11178/11178.lvclass"/>
+			</Item>
 			<Item Name="Specific RSI Modules" Type="Folder">
 				<Item Name="Specialty Digital" Type="Folder">
-					<Item Name="SD Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/SD Module/SD Module.lvclass"/>
 					<Item Name="9401.lvclass" Type="LVClass" URL="../Modules.lvlibp/9401/9401.lvclass"/>
 					<Item Name="9402.lvclass" Type="LVClass" URL="../Modules.lvlibp/9402/9402.lvclass"/>
+					<Item Name="SD Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/SD Module/SD Module.lvclass"/>
 				</Item>
 				<Item Name="9203.lvclass" Type="LVClass" URL="../Modules.lvlibp/9203/9203.lvclass"/>
 				<Item Name="9205.lvclass" Type="LVClass" URL="../Modules.lvlibp/9205/9205.lvclass"/>
 				<Item Name="9207.lvclass" Type="LVClass" URL="../Modules.lvlibp/9207/9207.lvclass"/>
 				<Item Name="9209.lvclass" Type="LVClass" URL="../Modules.lvlibp/9209/9209.lvclass"/>
 				<Item Name="9211.lvclass" Type="LVClass" URL="../Modules.lvlibp/9211/9211.lvclass"/>
+				<Item Name="9212.lvclass" Type="LVClass" URL="../Modules.lvlibp/9212/9212.lvclass"/>
 				<Item Name="9213.lvclass" Type="LVClass" URL="../Modules.lvlibp/9213/9213.lvclass"/>
 				<Item Name="9214.lvclass" Type="LVClass" URL="../Modules.lvlibp/9214/9214.lvclass"/>
 				<Item Name="9217.lvclass" Type="LVClass" URL="../Modules.lvlibp/9217/9217.lvclass"/>
@@ -1060,62 +1072,51 @@
 				<Item Name="9235.lvclass" Type="LVClass" URL="../Modules.lvlibp/9235/9235.lvclass"/>
 				<Item Name="9237.lvclass" Type="LVClass" URL="../Modules.lvlibp/9237/9237.lvclass"/>
 				<Item Name="9239.lvclass" Type="LVClass" URL="../Modules.lvlibp/9239/9239.lvclass"/>
+				<Item Name="9242.lvclass" Type="LVClass" URL="../Modules.lvlibp/9242/9242.lvclass"/>
+				<Item Name="9244.lvclass" Type="LVClass" URL="../Modules.lvlibp/9244/9244.lvclass"/>
 				<Item Name="9350.lvclass" Type="LVClass" URL="../Modules.lvlibp/9350/9350.lvclass"/>
 				<Item Name="9403.lvclass" Type="LVClass" URL="../Modules.lvlibp/9403/9403.lvclass"/>
 				<Item Name="9478.lvclass" Type="LVClass" URL="../Modules.lvlibp/9478/9478.lvclass"/>
-				<Item Name="9244.lvclass" Type="LVClass" URL="../Modules.lvlibp/9244/9244.lvclass"/>
-				<Item Name="9212.lvclass" Type="LVClass" URL="../Modules.lvlibp/9212/9212.lvclass"/>
-				<Item Name="9242.lvclass" Type="LVClass" URL="../Modules.lvlibp/9242/9242.lvclass"/>
 			</Item>
-			<Item Name="Specific RemIO Modules" Type="Folder">
-				<Item Name="11102.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11102/11102.lvclass"/>
-				<Item Name="11115.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11115/11115.lvclass"/>
-				<Item Name="11152.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11152/11152.lvclass"/>
-				<Item Name="11154.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11154/11154.lvclass"/>
-				<Item Name="11175.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11175/11175.lvclass"/>
-				<Item Name="11178.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11178/11178.lvclass"/>
-				<Item Name="11120.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11120/11120.lvclass"/>
-				<Item Name="11100.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11100/11100.lvclass"/>
-			</Item>
-			<Item Name="RSI Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RSI Module/RSI Module.lvclass"/>
-			<Item Name="Init Module.vi" Type="VI" URL="../Modules.lvlibp/Init Module.vi"/>
-			<Item Name="RemIO Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RemIO Module/RemIO Module.lvclass"/>
-			<Item Name="Get RemIO VI Reference.vim" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO VI Reference.vim"/>
-			<Item Name="Get RemIO Library Path.vi" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO Library Path.vi"/>
-			<Item Name="NI ECAT Remote IO.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/NI ECAT Remote IO.lvlib"/>
+			<Item Name="Check Special Tags.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
+			<Item Name="Clear Errors.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
+			<Item Name="Close File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Close File+.vi"/>
+			<Item Name="compatReadText.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/_oldvers/_oldvers.llb/compatReadText.vi"/>
+			<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
+			<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/NI Veristand/Custom Device API/Custom Device API.lvlib"/>
 			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/NI Veristand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
-			<Item Name="Clear Errors.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
-			<Item Name="negative confirmation.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/typedefs/negative confirmation.ctl"/>
-			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-			<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
-			<Item Name="Strip Path - Traditional__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Strip Path - Traditional__ogtk.vi"/>
-			<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
-			<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
-			<Item Name="Open File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Open File+.vi"/>
-			<Item Name="compatReadText.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/_oldvers/_oldvers.llb/compatReadText.vi"/>
-			<Item Name="Read File+ (string).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read File+ (string).vi"/>
-			<Item Name="Find First Error.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find First Error.vi"/>
-			<Item Name="Close File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Close File+.vi"/>
 			<Item Name="DialogType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
-			<Item Name="Write Spreadsheet String.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write Spreadsheet String.vi"/>
-			<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
-			<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 			<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
-			<Item Name="TagReturnType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
-			<Item Name="Check Special Tags.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
-			<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			<Item Name="Error Code Database.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
-			<Item Name="whitespace.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
-			<Item Name="Trim Whitespace.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
-			<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
+			<Item Name="Find First Error.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find First Error.vi"/>
 			<Item Name="Find Tag.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
 			<Item Name="Format Message String.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
 			<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
 			<Item Name="General Error Handler.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
-			<Item Name="Simple Error Handler.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
-			<Item Name="Read Lines From File.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read Lines From File.vi"/>
+			<Item Name="Get RemIO Library Path.vi" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO Library Path.vi"/>
+			<Item Name="Get RemIO VI Reference.vim" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO VI Reference.vim"/>
+			<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+			<Item Name="Init Module.vi" Type="VI" URL="../Modules.lvlibp/Init Module.vi"/>
+			<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+			<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
+			<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
+			<Item Name="negative confirmation.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/typedefs/negative confirmation.ctl"/>
+			<Item Name="NI ECAT Remote IO.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/NI ECAT Remote IO.lvlib"/>
+			<Item Name="Open File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Open File+.vi"/>
+			<Item Name="Read File+ (string).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read File+ (string).vi"/>
 			<Item Name="Read From Spreadsheet File (DBL).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read From Spreadsheet File (DBL).vi"/>
+			<Item Name="Read Lines From File.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read Lines From File.vi"/>
+			<Item Name="RemIO Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RemIO Module/RemIO Module.lvclass"/>
+			<Item Name="RSI Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RSI Module/RSI Module.lvclass"/>
+			<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
+			<Item Name="Simple Error Handler.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
+			<Item Name="Strip Path - Traditional__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Strip Path - Traditional__ogtk.vi"/>
+			<Item Name="TagReturnType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
+			<Item Name="Trim Whitespace.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
+			<Item Name="whitespace.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+			<Item Name="Write Spreadsheet String.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write Spreadsheet String.vi"/>
 			<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
 		</Item>
 		<Item Name="NI ECAT Remote IO.llb" Type="Document" URL="../NI ECAT Remote IO.llb"/>
@@ -2100,28 +2101,17 @@
 			<Item Name="RSI Module Template" Type="Folder">
 				<Item Name="Module Template.lvclass" Type="LVClass" URL="../Modules.lvlibp/Module Template/Module Template.lvclass"/>
 			</Item>
-			<Item Name="Specific RemIO Modules" Type="Folder">
-				<Item Name="11100.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11100/11100.lvclass"/>
-				<Item Name="11102.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11102/11102.lvclass"/>
-				<Item Name="11115.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11115/11115.lvclass"/>
-				<Item Name="11120.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11120/11120.lvclass"/>
-				<Item Name="11152.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11152/11152.lvclass"/>
-				<Item Name="11154.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11154/11154.lvclass"/>
-				<Item Name="11175.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11175/11175.lvclass"/>
-				<Item Name="11178.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11178/11178.lvclass"/>
-			</Item>
 			<Item Name="Specific RSI Modules" Type="Folder">
 				<Item Name="Specialty Digital" Type="Folder">
+					<Item Name="SD Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/SD Module/SD Module.lvclass"/>
 					<Item Name="9401.lvclass" Type="LVClass" URL="../Modules.lvlibp/9401/9401.lvclass"/>
 					<Item Name="9402.lvclass" Type="LVClass" URL="../Modules.lvlibp/9402/9402.lvclass"/>
-					<Item Name="SD Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/SD Module/SD Module.lvclass"/>
 				</Item>
 				<Item Name="9203.lvclass" Type="LVClass" URL="../Modules.lvlibp/9203/9203.lvclass"/>
 				<Item Name="9205.lvclass" Type="LVClass" URL="../Modules.lvlibp/9205/9205.lvclass"/>
 				<Item Name="9207.lvclass" Type="LVClass" URL="../Modules.lvlibp/9207/9207.lvclass"/>
 				<Item Name="9209.lvclass" Type="LVClass" URL="../Modules.lvlibp/9209/9209.lvclass"/>
 				<Item Name="9211.lvclass" Type="LVClass" URL="../Modules.lvlibp/9211/9211.lvclass"/>
-				<Item Name="9212.lvclass" Type="LVClass" URL="../Modules.lvlibp/9212/9212.lvclass"/>
 				<Item Name="9213.lvclass" Type="LVClass" URL="../Modules.lvlibp/9213/9213.lvclass"/>
 				<Item Name="9214.lvclass" Type="LVClass" URL="../Modules.lvlibp/9214/9214.lvclass"/>
 				<Item Name="9217.lvclass" Type="LVClass" URL="../Modules.lvlibp/9217/9217.lvclass"/>
@@ -2133,51 +2123,62 @@
 				<Item Name="9235.lvclass" Type="LVClass" URL="../Modules.lvlibp/9235/9235.lvclass"/>
 				<Item Name="9237.lvclass" Type="LVClass" URL="../Modules.lvlibp/9237/9237.lvclass"/>
 				<Item Name="9239.lvclass" Type="LVClass" URL="../Modules.lvlibp/9239/9239.lvclass"/>
-				<Item Name="9242.lvclass" Type="LVClass" URL="../Modules.lvlibp/9242/9242.lvclass"/>
-				<Item Name="9244.lvclass" Type="LVClass" URL="../Modules.lvlibp/9244/9244.lvclass"/>
 				<Item Name="9350.lvclass" Type="LVClass" URL="../Modules.lvlibp/9350/9350.lvclass"/>
 				<Item Name="9403.lvclass" Type="LVClass" URL="../Modules.lvlibp/9403/9403.lvclass"/>
 				<Item Name="9478.lvclass" Type="LVClass" URL="../Modules.lvlibp/9478/9478.lvclass"/>
+				<Item Name="9244.lvclass" Type="LVClass" URL="../Modules.lvlibp/9244/9244.lvclass"/>
+				<Item Name="9212.lvclass" Type="LVClass" URL="../Modules.lvlibp/9212/9212.lvclass"/>
+				<Item Name="9242.lvclass" Type="LVClass" URL="../Modules.lvlibp/9242/9242.lvclass"/>
 			</Item>
-			<Item Name="Check Special Tags.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
-			<Item Name="Clear Errors.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
-			<Item Name="Close File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Close File+.vi"/>
-			<Item Name="compatReadText.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/_oldvers/_oldvers.llb/compatReadText.vi"/>
-			<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
-			<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
+			<Item Name="Specific RemIO Modules" Type="Folder">
+				<Item Name="11102.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11102/11102.lvclass"/>
+				<Item Name="11115.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11115/11115.lvclass"/>
+				<Item Name="11152.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11152/11152.lvclass"/>
+				<Item Name="11154.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11154/11154.lvclass"/>
+				<Item Name="11175.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11175/11175.lvclass"/>
+				<Item Name="11178.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11178/11178.lvclass"/>
+				<Item Name="11120.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11120/11120.lvclass"/>
+				<Item Name="11100.lvclass" Type="LVClass" URL="../Modules.lvlibp/REM-11100/11100.lvclass"/>
+			</Item>
+			<Item Name="RSI Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RSI Module/RSI Module.lvclass"/>
+			<Item Name="Init Module.vi" Type="VI" URL="../Modules.lvlibp/Init Module.vi"/>
+			<Item Name="RemIO Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RemIO Module/RemIO Module.lvclass"/>
+			<Item Name="Get RemIO VI Reference.vim" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO VI Reference.vim"/>
+			<Item Name="Get RemIO Library Path.vi" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO Library Path.vi"/>
+			<Item Name="NI ECAT Remote IO.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/NI ECAT Remote IO.lvlib"/>
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/NI Veristand/Custom Device API/Custom Device API.lvlib"/>
 			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/NI Veristand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
-			<Item Name="DialogType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
-			<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
+			<Item Name="Clear Errors.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
+			<Item Name="negative confirmation.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/typedefs/negative confirmation.ctl"/>
 			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-			<Item Name="Error Code Database.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
+			<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
+			<Item Name="Strip Path - Traditional__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Strip Path - Traditional__ogtk.vi"/>
+			<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
+			<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
+			<Item Name="Open File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Open File+.vi"/>
+			<Item Name="compatReadText.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/_oldvers/_oldvers.llb/compatReadText.vi"/>
+			<Item Name="Read File+ (string).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read File+ (string).vi"/>
 			<Item Name="Find First Error.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find First Error.vi"/>
+			<Item Name="Close File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Close File+.vi"/>
+			<Item Name="DialogType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
+			<Item Name="Write Spreadsheet String.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write Spreadsheet String.vi"/>
+			<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
+			<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+			<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
+			<Item Name="TagReturnType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
+			<Item Name="Check Special Tags.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
+			<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+			<Item Name="Error Code Database.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
+			<Item Name="whitespace.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+			<Item Name="Trim Whitespace.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
+			<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
 			<Item Name="Find Tag.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
 			<Item Name="Format Message String.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
 			<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
 			<Item Name="General Error Handler.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
-			<Item Name="Get RemIO Library Path.vi" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO Library Path.vi"/>
-			<Item Name="Get RemIO VI Reference.vim" Type="VI" URL="../Modules.lvlibp/RemIO Module/Get RemIO VI Reference.vim"/>
-			<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
-			<Item Name="Init Module.vi" Type="VI" URL="../Modules.lvlibp/Init Module.vi"/>
-			<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-			<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
-			<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
-			<Item Name="negative confirmation.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/typedefs/negative confirmation.ctl"/>
-			<Item Name="NI ECAT Remote IO.lvlib" Type="Library" URL="../Modules.lvlibp/1abvi3w/vi.lib/indcomecat/Remote IO/NI ECAT Remote IO.lvlib"/>
-			<Item Name="Open File+.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Open File+.vi"/>
-			<Item Name="Read File+ (string).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read File+ (string).vi"/>
-			<Item Name="Read From Spreadsheet File (DBL).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read From Spreadsheet File (DBL).vi"/>
-			<Item Name="Read Lines From File.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read Lines From File.vi"/>
-			<Item Name="RemIO Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RemIO Module/RemIO Module.lvclass"/>
-			<Item Name="RSI Module.lvclass" Type="LVClass" URL="../Modules.lvlibp/RSI Module/RSI Module.lvclass"/>
-			<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
 			<Item Name="Simple Error Handler.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
-			<Item Name="Strip Path - Traditional__ogtk.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/user.lib/_OpenG.lib/file/file.llb/Strip Path - Traditional__ogtk.vi"/>
-			<Item Name="TagReturnType.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
-			<Item Name="Trim Whitespace.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
-			<Item Name="whitespace.ctl" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
-			<Item Name="Write Spreadsheet String.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write Spreadsheet String.vi"/>
+			<Item Name="Read Lines From File.vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read Lines From File.vi"/>
+			<Item Name="Read From Spreadsheet File (DBL).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read From Spreadsheet File (DBL).vi"/>
 			<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
 		</Item>
 		<Item Name="NI ECAT Remote IO.llb" Type="Document" URL="../NI ECAT Remote IO.llb"/>
@@ -2377,7 +2378,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Build VIs.lvlib/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{18205483-CCFE-4E6A-AFF0-8C3E3F5451FB}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64/Scan Engine - RT.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/Scan Engine - RT.llb</Property>
