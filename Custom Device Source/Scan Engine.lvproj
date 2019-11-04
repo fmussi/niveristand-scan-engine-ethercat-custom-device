@@ -73,6 +73,7 @@
 			<Item Name="LibTest.lvlib" Type="Library" URL="../Tests/ManualTests/LibTest.lvlib"/>
 			<Item Name="test SGL type.vi" Type="VI" URL="../Tests/ManualTests/test SGL type.vi"/>
 			<Item Name="compare typedefs.vi" Type="VI" URL="../Tests/ManualTests/compare typedefs.vi"/>
+			<Item Name="manual_AutoDetectModules.vi" Type="VI" URL="../Tests/ManualTests/manual_AutoDetectModules.vi"/>
 		</Item>
 		<Item Name="Scan Engine Custom Device.lvlib" Type="Library" URL="../Scan Engine Custom Device.lvlib"/>
 		<Item Name="Build VIs.lvlib" Type="Library" URL="../Build VIs/Build VIs.lvlib"/>
@@ -2378,7 +2379,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Build VIs.lvlib/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{18205483-CCFE-4E6A-AFF0-8C3E3F5451FB}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64/Scan Engine - RT.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/Scan Engine - RT.llb</Property>
